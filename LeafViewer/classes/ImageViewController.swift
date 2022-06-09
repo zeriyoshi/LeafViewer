@@ -50,8 +50,14 @@ class ImageViewController: NSViewController {
     }
 
     func refreshImage(viewMode: ViewMode) {
-
-        let image = ImageFileManager.shared.currentImage!
+        guard let image = ImageFileManager.shared.currentImage else {
+            NSAlert(error: NSError(domain: "IO", code: 0, userInfo: [
+                NSLocalizedDescriptionKey: "File opening error",
+                NSLocalizedRecoverySuggestionErrorKey: "Cannot access current file."
+            ])).runModal()
+            self.window?.close()
+            return
+        }
 
         NSLog("image size: %f %f", image.size.width, image.size.height)
 
