@@ -109,9 +109,8 @@ extension AppDelegate {
         openPanel.canChooseDirectories = true
         openPanel.canCreateDirectories = false
         openPanel.canChooseFiles = true
-        openPanel.allowedFileTypes = ["jpg", "jpeg", "gif", "png", "bmp"]
         openPanel.begin(completionHandler: { (result) -> Void in
-            if result.rawValue == NSFileHandlingPanelOKButton {
+            if result == NSApplication.ModalResponse.OK {
                 if let url = openPanel.url {
                     self.processImageFile(url.path)
                 }
@@ -220,19 +219,19 @@ extension AppDelegate {
 
     @objc func menuItemActionDoOriginalSize(sender: NSMenuItem) {
         if self.imageWindowController != nil {
-            _ = self.imageWindowController!.originalImageSize()
+            self.imageWindowController!.originalImageSize()
         }
     }
 
     @objc func menuItemActionZoom(sender: NSMenuItem) {
         if self.imageWindowController != nil {
-            _ = self.imageWindowController!.zoomImageSize()
+            self.imageWindowController!.zoomImageSize()
         }
     }
 
     @objc func menuItemActionReduction(sender: NSMenuItem) {
         if self.imageWindowController != nil {
-            _ = self.imageWindowController!.smallImageSize()
+            self.imageWindowController!.smallImageSize()
         }
     }
 

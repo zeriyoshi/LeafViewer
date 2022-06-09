@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -263,7 +263,6 @@
 				B854DFBE1EF7489B00984974 /* Frameworks */,
 				B854DFBF1EF7489B00984974 /* Resources */,
 				D60665AAB32811B1CE51C443 /* [CP] Embed Pods Frameworks */,
-				221BFC2CBA2A2C9E50229AC1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,8 +281,6 @@
 				B854DFCE1EF7489B00984974 /* Sources */,
 				B854DFCF1EF7489B00984974 /* Frameworks */,
 				B854DFD01EF7489B00984974 /* Resources */,
-				F618D54682B564105365C597 /* [CP] Embed Pods Frameworks */,
-				6ED150D971AA772A7CDDC817 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,8 +300,6 @@
 				B854DFD91EF7489B00984974 /* Sources */,
 				B854DFDA1EF7489B00984974 /* Frameworks */,
 				B854DFDB1EF7489B00984974 /* Resources */,
-				1E950879FC4365865D3320A5 /* [CP] Embed Pods Frameworks */,
-				14495E436A147EFC188ED540 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,28 +323,29 @@
 				TargetAttributes = {
 					B854DFC01EF7489B00984974 = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1340;
 						ProvisioningStyle = Automatic;
 					};
 					B854DFD11EF7489B00984974 = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1340;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B854DFC01EF7489B00984974;
 					};
 					B854DFDC1EF7489B00984974 = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1340;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B854DFC01EF7489B00984974;
 					};
 				};
 			};
 			buildConfigurationList = B854DFBC1EF7489B00984974 /* Build configuration list for PBXProject "LeafViewer" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -393,51 +389,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14495E436A147EFC188ED540 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeafViewerUITests/Pods-LeafViewerUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1E950879FC4365865D3320A5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeafViewerUITests/Pods-LeafViewerUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		221BFC2CBA2A2C9E50229AC1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeafViewer/Pods-LeafViewer-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		57DA5D176DBECF7B75949ECD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,21 +405,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6ED150D971AA772A7CDDC817 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeafViewerTests/Pods-LeafViewerTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		76CDC6BE3390C728E5340077 /* [CP] Check Pods Manifest.lock */ = {
@@ -513,7 +449,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LeafViewer/Pods-LeafViewer-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LeafViewer/Pods-LeafViewer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ZipUtilities/ZipUtilities.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -522,22 +458,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeafViewer/Pods-LeafViewer-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F618D54682B564105365C597 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeafViewerTests/Pods-LeafViewerTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LeafViewer/Pods-LeafViewer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -717,7 +638,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -726,14 +648,21 @@
 			baseConfigurationReference = 70CD781AE6589FC1C08604E4 /* Pods-LeafViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 6K3HSDKKM5;
 				INFOPLIST_FILE = LeafViewer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nasust.LeafViewer;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.3.1;
+				PRODUCT_BUNDLE_IDENTIFIER = io.zeriyoshi.fork.com.nasust.LeafViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -742,14 +671,21 @@
 			baseConfigurationReference = 4E8118AE9E5E0025F9660536 /* Pods-LeafViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 6K3HSDKKM5;
 				INFOPLIST_FILE = LeafViewer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nasust.LeafViewer;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.3.1;
+				PRODUCT_BUNDLE_IDENTIFIER = io.zeriyoshi.fork.com.nasust.LeafViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -761,11 +697,15 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LeafViewerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nasust.LeafViewerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeafViewer.app/Contents/MacOS/LeafViewer";
 			};
 			name = Debug;
@@ -778,11 +718,15 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LeafViewerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nasust.LeafViewerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeafViewer.app/Contents/MacOS/LeafViewer";
 			};
 			name = Release;
@@ -794,11 +738,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LeafViewerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nasust.LeafViewerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = LeafViewer;
 			};
 			name = Debug;
@@ -810,11 +758,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LeafViewerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nasust.LeafViewerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = LeafViewer;
 			};
 			name = Release;

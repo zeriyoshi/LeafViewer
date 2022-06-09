@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :osx , "10.12"
+platform :osx , "12.3"
 
 target 'LeafViewer' do
   use_frameworks!

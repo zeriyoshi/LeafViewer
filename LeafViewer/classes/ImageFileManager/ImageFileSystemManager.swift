@@ -156,7 +156,7 @@ class ImageFileSystemManager: ImageFileManagerProto {
         let directoryPath = NSString(string: fileName).deletingLastPathComponent
 
         if self.processImageDirectory(directory: directoryPath) {
-            self.currentImageIndex = self.directoryImageFiles.index(of: fileName)!
+            self.currentImageIndex = self.directoryImageFiles.firstIndex(of: fileName)!
             return true
         }
 
@@ -196,7 +196,11 @@ class ImageFileSystemManager: ImageFileManagerProto {
     }
 
     func imageData(fileName: String) -> Data?{
-        return NSData(contentsOfFile: fileName) as Data!
+        do {
+            return try NSData(contentsOfFile: fileName) as Data
+        } catch {
+            return nil
+        }
     }
 
 }
